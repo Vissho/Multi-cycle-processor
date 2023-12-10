@@ -1,0 +1,15 @@
+
+State Machine - |top|mips:mips1|controller:c|maindec:md|state
+Name state.S11_Jump state.S10_ADDIWriteback state.S9_ADDIExecute state.S8_Branch state.S7_ALUWriteback state.S6_Execute state.S5_MemWrite state.S4_MemWriteback state.S3_MemRead state.S2_MemAdr state.S1_Decode state.S0_Fetch 
+state.S0_Fetch 0 0 0 0 0 0 0 0 0 0 0 0 
+state.S1_Decode 0 0 0 0 0 0 0 0 0 0 1 1 
+state.S2_MemAdr 0 0 0 0 0 0 0 0 0 1 0 1 
+state.S3_MemRead 0 0 0 0 0 0 0 0 1 0 0 1 
+state.S4_MemWriteback 0 0 0 0 0 0 0 1 0 0 0 1 
+state.S5_MemWrite 0 0 0 0 0 0 1 0 0 0 0 1 
+state.S6_Execute 0 0 0 0 0 1 0 0 0 0 0 1 
+state.S7_ALUWriteback 0 0 0 0 1 0 0 0 0 0 0 1 
+state.S8_Branch 0 0 0 1 0 0 0 0 0 0 0 1 
+state.S9_ADDIExecute 0 0 1 0 0 0 0 0 0 0 0 1 
+state.S10_ADDIWriteback 0 1 0 0 0 0 0 0 0 0 0 1 
+state.S11_Jump 1 0 0 0 0 0 0 0 0 0 0 1 
